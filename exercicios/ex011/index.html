@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5 </title>
+</head>
+<body> 
+    <h1>Imagens Dinâmicas</h1> 
+    <p>Tente abrir este site em vários dispositivos diferente ou simplismente aumente e diminua o tamanho do seu navegador.</p>  
+    <picture>
+    <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="imagem/png">
+    <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+     <img src="imagem/foto-g.png" alt="imagem flexivel">  
+    </picture>
+<h1>Reproduindo Áudio!</h1>
+<p>Vamos reproduzir áudio em HTML5.</p>
+
+<audio preload="metadata" controls autoplay controls loop></audio>
+<audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+<audio >
+<source src="midia/guanacast-33.mp3" type="audio/mpeg">
+<source src="midia/guanacast-33.ogg" type="audio/ogg">
+<source src="midia/guanacast-33.wav" type="audio/wav">
+</audio>
+<p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3"></a>
+</p>
+
+</body>
+</html>
