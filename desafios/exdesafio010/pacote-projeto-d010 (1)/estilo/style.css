@@ -60,7 +60,7 @@ header > p {
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.279);
    }
 
@@ -153,16 +153,16 @@ main strong {
         background-color:  var(--cor1);
         margin: 0px -10px 30px -10px;
         padding: 20px;
-        padding-bottom:80%;
-            position: relative;
+        padding-bottom:35%;
+        position: relative;
     }
 
     div.video > iframe {
         position: absolute;
         top: 5%;
         left: 5%;
-        width: 100%;
-        heigth: 100%
+        width: 90%;
+        heigth: 90%
     }
 
  aside {
