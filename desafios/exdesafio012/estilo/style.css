@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+   }
+
+   header {
+    background-color: black;
+    color: white ;
+    text-align: center;
+   }
+/*falando sobre o titulo*/ 
+   header > h1 {
+    padding: 50px;
+    font-variant: small-caps;
+    }
+/*falando sobre o parágrafo*/ 
+    header > p {
+        padding-bottom: 50px;
+    }
+
+   /*falando sobre o link dentro do cabeçlho*/ 
+   header a, footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    /*falando sobre o sublinhado, que esta no cabçalho*/ 
+    header a:hover, footer a:hover {
+         text-decoration: underline;
+
+    }
+    section{
+        padding-top: 10hv;      /*margem em cima*/ 
+        padding-bottom: 10hv;   /*margem em baixo*/ 
+        line-height: 2em;   /*espaço entre as linhas */ 
+        padding-left: 30px;
+    }
+
+    section.normal{
+        background-color: white;  /*cor do fundo*/ 
+        color:black;  /*cor da letra*/ 
+    }
+
+section.imagem{
+    background-color:rgb(51, 51, 51);
+    color:white
+
+}
+ /*todo paragrafo que estiver dentro de imagen terá uma caixa preta*/ 
+section.imagem > p {
+     /*vai ter uma caixa no paragrafo pra não sobrepor a imagem*/ 
+    width: 400px;
+    background-color: black;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
