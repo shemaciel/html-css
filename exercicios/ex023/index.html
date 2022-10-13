@@ -14,18 +14,22 @@
         table{
             width: 400px;
             border-collapse: collapse;
-            border: 5PX solid rgb(0, 255, 76);
+            background-color: aliceblue;
+           
         }
         tr.linha {
             background-color: gray;
         }
-        td.dado{
-            background-color: blue;
-        }
-
+       
         td{
             border: 1px solid black;
-            padding: 8PX;
+            padding: 8px;
+            text-align: center; /* Alinhamento Horizontal*/
+            vertical-align: middle; /* dado centralizado*/
+        }
+
+        .numero { 
+            text-align: right;
         }
     </style>
 </head>
@@ -41,22 +45,22 @@
          <tr> <!-- 1linha-->
             <td>A1</td> <!-- 1 dado-->
             <td>B1</td>
-            <td>C1</td>
+            <td class="numero">C1</td>
         </tr>
-        <tr class="linha"> <!-- 2 linha-->
+        <tr> <!-- 2 linha-->
             <td>A2</td> <!-- dado-->
             <td>B2</td>
             <td>C2</td>
         </tr> 
         <tr> <!-- 3linha-->
-            <td>A3</td> <!-- dado-->
+            <td class="numero">A3</td> <!-- dado-->
             <td>B3</td>
             <td>C3</td>
         </tr>
         <tr> <!-- 4 linha-->
             <td>A4</td> <!-- dado-->
             <td>B4</td>
-            <td class="dado">C4</td>
+            <td>C4</td>
         </tr>   
     </table>
 
