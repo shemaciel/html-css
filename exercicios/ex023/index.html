@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: antiquewhite;
+            
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 5PX solid rgb(0, 255, 76);
+        }
+        tr.linha {
+            background-color: gray;
+        }
+        td.dado{
+            background-color: blue;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8PX;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Minha primeira Tabela!
+                    <!--Hierarquia de tabelas SIMPLES
+                    TABLE = tabela
+                    TABLE ROW = linha de tabel ( dentro das linhas) <tr>
+                    TABLE HEADER = cabeçalho de tabela
+                    TABELA DATA = dado de tabela <td>--> 
+        <table>
+         <tr> <!-- 1linha-->
+            <td>A1</td> <!-- 1 dado-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"> <!-- 2 linha-->
+            <td>A2</td> <!-- dado-->
+            <td>B2</td>
+            <td>C2</td>
+        </tr> 
+        <tr> <!-- 3linha-->
+            <td>A3</td> <!-- dado-->
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- 4 linha-->
+            <td>A4</td> <!-- dado-->
+            <td>B4</td>
+            <td class="dado">C4</td>
+        </tr>   
+    </table>
+
+        
+    </h1>
+</body>
+</html>
