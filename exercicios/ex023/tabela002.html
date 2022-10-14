@@ -10,17 +10,26 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color:rgb(228, 222, 222);
         }
+
+        .cor {
+            background-color: gray;
+        }
         table{
             width: 500px;
             border-collapse: collapse;
+            }
             
-            
-        }
         td, th {
             border: 1px solid black;
             padding: 10px;
-            
-        }
+            }
+
+            caption {
+                font-size: 1em;
+                font-weight: bold;
+                padding: 10px;
+                background-color: lightgray;
+            }
         thead, tfoot {
             
             background-color: gray;
@@ -36,6 +45,7 @@
    <h1>Uso de Tabelas Grandes!</h1> 
     <!--Anatonia para de tabelas GRANDES
                     TABLE = tabela
+                    CAPITION = legenda da tabela
 
                      THEAD = cabeça
                      dentro da cabeça podemos ter: tr, td, th
@@ -47,8 +57,11 @@
 
      <table>
         <thead>
-            <th> Estado</th>
-            <th> População</th>
+            <caption>
+                População das Unidades Federativas
+            </caption>
+            <th scope="col" class="cor"> Estado</th>
+            <th scope="col" style="width: 100px;" class="cor"> População</th>
         </thead>
         <tbody>
             <tr>
@@ -63,10 +76,30 @@
             <td>Rio de Janeiro</td>
             <td class="num"> 17.590.970</td>
         </tr>
+        <tr>
+            <td>bahia</td>
+            <td class="num"> 14.590.970</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num"> 11.590.970</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num"> 15.590.970</td>
+        </tr>
+        <tr>
+            <td>Pernanbuco</td>
+            <td class="num"> 7.590.970</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
         </tbody>
         <tfoot>
-            <th> Total de Habiatntes</th>
-            <td class="num"><strong>83.065.265</strong> </td>
+            <th scope="row"> Total de Habiatntes</th>
+            <td class="num"><strong>147.065.265</strong> </td>
         </tfoot>
      </table>               
 </body>
