@@ -17,6 +17,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* posição comprtamental de uma tabela*/
             }
             
         td, th {
@@ -30,11 +31,24 @@
                 padding: 10px;
                 background-color: lightgray;
             }
+            /* usamos essa descrição nth-child pra coluna zebrada ( é a cor do fundo só), 
+            onde podemos brincar com as cores sendo (odd = impar, <2n-1> ou 
+                even = par <2n>) */
+            tbody > tr:nth-child(odd) { 
+                background-color: lightgray;
+
+            }
         thead, tfoot {
-            
             background-color: gray;
             color: white;
             }
+            /* cabeçalho fixo
+            Ainda não esta funcionando em todos os navegadores*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
 
         td.num{
             text-align: right;
@@ -94,6 +108,42 @@
         </tr>
         <tr>
             <td>Paraná</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Paraíba</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>
+            <td class="num"> 9.590.970</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
             <td class="num"> 9.590.970</td>
         </tr>
         </tbody>
