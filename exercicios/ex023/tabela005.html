@@ -16,17 +16,23 @@
             background-color: rgba(144, 238, 144, 0.637);
         }
          caption{
-            background-color: lightgreen;
+            background-color:antiquewhite;
             text-align:right;
          }
          th{
             border: 2px solid grey;
-            background-color: rgb(137, 241, 137);
+            background-color: rgb(190, 238, 190);
          }
 
      td, tr{
         border: 2px solid grey;
-        background-color: rgba(151, 238, 151, 0.616);
+
+        }
+        col.verde {
+            background-color:lightgreen
+        }
+        col.amarelo {
+            background-color:lightcyan;
         }
         
 
@@ -35,6 +41,13 @@
 <body>
     <h1>Exercicios de Tabela</h1>
      <table>
+        <colgroup>
+            <col class="azul">
+            <col class="verde">
+            <col class="azul">
+            <col class="verde">
+
+        </colgroup>
         <caption>
             Cadastro
         </caption>
