@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Media Query </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Meu Site
+        </h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens" >
+            <ul>
+                <li> <a href="#"> Opção 1 </a> </li>
+                <li> <a href="#"> Opção 2 </a> </li>
+                <li> <a href="#"> Opção 3 </a> </li>
+                <li> <a href="#"> opção 4 </a> </li>
+                <li> <a href="#"> opção 5 </a>  </li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2> Testando Media  Query</h2><br>
+            <h3>Falando de Curcumy</h3><br>
+            <p>A <strong>curcumina</strong>  está presente há milênios pela ayurvédica, 
+            a tradicional medicina indiana, como fonte de saúde e bem-estar. Mais recentemente, 
+            diversos estudos científicos comprovaram seu potencial como antioxidante e 
+            anti-inflamatório, duas funções importantes para a manutenção da saúde. 
+            Descubra neste texto quais são os benefícios da curcumina para o nosso corpo
+            e como ela pode ser incorporada na dieta ou ingerida via medicamentos manipulados.</p>
+
+             <p> <strong>O que é a curcumina?</strong></p>
+
+             <p> A <strong>curcumina</strong> é a substância ativa da cúrcuma, uma planta muito utilizada na culinária
+            indiana, sendo famosa por sua cor amarelo-ouro e seu sabor picante. 
+            A cúrcuma também é conhecida como açafrão-da-terra, açafrão-da-índia, turmérico, 
+            raiz-de-sol e gengibre amarelo. </p>
+
+            <p>A <strong>curcumina</strong> pertence à categoria dos curcuminoides, que são substâncias com propriedades 
+            importantes para a saúde do corpo. Talvez sua mais conhecida propriedade seja atuar como antioxidante, 
+            ou seja, “doar” um de seus elétrons aos radicais livres e ainda continuar estável. Com isso, os radicais 
+            livres se tornam moléculas estáveis e acabam sendo eliminados, dificultando o aparecimento de uma série de doenças.</p> 
+
+           <p> <strong>curcumina</strong>também tem propriedades medicamentosas. Estudo mostrou que ela é efetiva para combater as inflamações
+            causadas por vírus no trato respiratório. Além disso, auxilia no combate à inflamação crônica, que é 
+            causada por fatores como obesidade, estresse e envelhecimento e está ligada a doenças cardíacas, 
+            vasculares, câncer e outras. Outra pesquisa mostrou que a <strong>curcumina</strong> tem efeito anestésico comparável ao
+            paracetamol e à nimesulida, sem causar desconfortos gastrointestinais. </p>
+
+            <p>A Estudos mostram ainda que a <strong>curcumina</strong> pode ser uma importante aliada para a 
+            perda de peso, já que favorece a produção da gordura “escura”, considerada 
+            saudável, enquanto auxilia na queima da gordura “branca”, que se acumula no 
+            tecido adiposo. Além disso, pesquisas sugerem que a <strong>curcumina</strong> pode ajudar no 
+            tratamento de: síndrome metabólica, artrite e ansiedade.</p> 
+
+            
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else { 
+            itens.style.display = 'block'
+         }
+        }
+    </script>
+</body>
+</html>
